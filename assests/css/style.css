@@ -1,0 +1,630 @@
+body{
+
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color:#e6e2d3 ;
+}
+h1,h2,h3,h4,h5,h6{
+
+margin: 0px;
+font-family: 'candal',serif;
+}
+a{
+    text-decoration: none;
+   
+}
+.text-input{
+
+    padding:0.7rem 1rem;
+    width:100%;
+    display:block;
+    color:#444;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid lightgray
+
+}
+.clearfix::after{
+content:'';
+display:block;
+clear:"both"
+}
+.btn{
+
+    padding: 10px;
+    background-color: darkolivegreen;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+}
+header{
+
+    background-color: darkcyan;
+    height: 66px;
+}
+header *{
+
+    color:white;
+}
+header .toggler-icon{
+
+    display: none;
+}
+header .logo{
+
+    float: left;
+    height: inherit;
+    margin-left: 13px;
+    font-family: 'candal',serif;
+  
+}
+header .logo .logo-text{
+
+    margin: 9px;
+}
+header .logo span{
+
+    color:cornflowerblue;
+}
+header ul{
+
+    float: right;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+
+   
+}
+
+header ul li{
+
+    float:left;
+}
+
+header ul li a{
+display: block;
+font-size: 20px;
+text-decoration: none;
+padding: 21px;
+}
+/* Add a rule to clear the float and prevent the background color from extending */
+.content-container::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+header ul li a:hover{
+
+    background-color: brown;
+    transition: 0.5s;
+}
+
+
+header ul li ul{
+
+    position: absolute;
+   top:66px;
+   right:0;
+   width:180px;
+   display: none;
+   z-index: 8888;
+}
+header ul li:hover ul{
+
+    display: block;
+}
+header ul li ul li{
+
+    width:100%;
+}
+header ul li ul li a{
+
+    background-color: white;
+    transition: 0.5s;
+    color:black;
+}
+header ul li ul li a:hover{
+
+    background-color: cyan;
+}
+
+/* Here is Styling for post wrapper */
+
+.post-slider{
+position: relative;
+  
+   
+}
+ .post-slider  .slider-title
+ {
+
+    text-align: center;
+    margin: 30px 0px;
+    font-size:30px;
+    font-weight: 400;
+    color:gray;
+ }
+ .post-slider .next{
+position: absolute;
+    right:30px;
+    top:50%;
+    font-size:40px;
+    color:brown;
+    cursor: pointer;
+ }
+ .post-slider .prev{
+    position: absolute;
+        left:30px;
+        top:50%;
+        font-size:40px;
+        color:brown;
+        cursor: pointer;
+     }
+.post-slider .post-wrapper{
+
+  
+    width:84%;
+    margin:0px auto;
+    height: 360px;
+    overflow: hidden;
+    padding: 10px 0px 10px 0px;
+    
+}
+.post-slider .post-wrapper a:hover{
+
+    color:chocolate;
+    transition: 0.8s;
+}
+.post-slider .post-wrapper .post{
+  display:inline-block;
+
+    
+    width:300px;
+    height: 340px;
+    margin:0px 27px;
+    border-radius:5px;
+    box-shadow: 1rem 1rem 1rem -1rem gainsboro;
+}
+.post-slider .post-wrapper .post .post-info{
+   background-color: white;
+   margin-top: 0px;
+    height: 110px;
+}
+.post-slider .post-wrapper .post .post-info h6{
+    
+    font-size: 15px;
+    font-weight: 600;
+    color:white;
+  padding: 10px;
+  border-bottom-right-radius: 5px;;
+  border-bottom-left-radius: 5px;
+}
+
+.post-slider .post-wrapper .post .post-info i{
+
+    color:gray;
+    margin-left: 5px;
+    padding: 5px;
+    font-size: 13px;
+    margin-bottom: 40px;
+}
+.post-slider .post-wrapper .post .image-slider{
+
+    width:100%;
+    height: 240px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+
+/*  Here is styling for my content section */
+.content{
+margin: 30px auto 30px;
+width:90%;
+
+
+
+}
+
+.content .main-content{
+
+    width:70%;
+    float:left;
+   
+    
+
+}
+.content .main-content .recent-post-title{
+
+    margin:20px;
+}
+
+.content .main-content .post{
+
+    width:95%;
+    height: 300px;
+    margin:20px auto;
+    background-color: white;
+    position: relative;
+   
+}
+.content .main-content .post .image-slider{
+
+    width:40%;
+    height: 100%;
+    float:left;
+}
+.content .main-content .post .post-preview h2{
+
+    margin-bottom: 20px;
+}
+.content .main-content .post .post-preview a{
+ transition: 0.8s;
+    color:brown;
+}
+.content .main-content .post .post-preview p{
+   margin-left: 0px;
+   padding-left: 0px;
+    color:brown;
+}
+.content .main-content .post .post-preview a:hover{
+
+    color:black;
+}
+.content .main-content .post .post-preview i{
+
+    font-size: 12px;
+    color:gray;
+}
+.content .main-content .post .post-preview{
+    width:50%;
+   padding:10px;
+   float:left;
+}
+.content .main-content .post .read-more{
+    border:1px solid gray;
+    background-color: white;
+position: absolute;
+    bottom:10px;
+    right: 20px;
+    color:black;
+    
+}
+.content .main-content .post .read-more:hover{
+
+    background-color: brown;
+    color:white !important;
+}
+.content .sidebar{
+
+    width:29%;
+    float:left;
+   height:1020px;
+  
+    
+}
+.content .sidebar .section{
+
+padding: 20px;
+background-color: white;
+border-radius: 5px;
+margin-bottom: 20px;
+}
+.content .sidebar .section.search  
+{
+
+    margin-top: 80px;
+}
+.content .sidebar .section.search .text-input{
+
+    padding:0.7rem 1rem;
+    width:100%;
+    display:block;
+    color:#444;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid lightgray
+
+}
+.content .sidebar .section.topics ul{
+
+    list-style: none;
+    margin:0px;
+    padding:0px;
+    border-top: 1px solid black;
+}
+.content .sidebar .section.topics ul li a{
+
+    color:black;
+    display:block;
+    font-size:20px;
+    border-bottom: 1px solid black;
+    padding:10px 0px 10px 0px;
+    font-family: 'lora',serif;
+    transition: all 0.5s;
+}
+.content .sidebar .section .title{
+
+    margin: 10px 0px 10px 0px;
+}
+.content .sidebar .section.topics ul li a:hover{
+    padding-left: 13px;
+}
+/* ending of post wrapper */
+
+
+@media only screen and (max-width:750px)
+{
+
+.content .main-content{
+
+    width:100%;
+}
+.content .main-content .post{
+
+    height: 600px;
+}
+.content .main-content .post .image-slider{
+  height: 300px;
+    width:100%;
+}
+.content .main-content .post .post-preview{
+
+    width:100%;
+}
+.content .main-content .post .read-more{
+    width:80%;
+    margin: 0px auto;
+    padding-left: 0px;
+    text-align: center;
+    right: 27px;
+}
+.content .sidebar{
+
+    width:100%;
+    float:left;
+   height:1020px;
+   
+    
+}
+.content .sidebar .section.topics ul li{
+
+    margin-top: 20px;
+}
+}
+
+/* fotter csss */
+.fotter{
+    width:100%;
+
+height: 350px;
+position: relative;
+
+
+}
+
+/* here is a Authentication section */
+.auth-content{
+   background-color: white;
+    width:30%;
+    margin: 50px auto;
+    border-radius: 5px;
+    box-shadow:  4px 4px 10px rgba(173, 216, 230, 0.5);
+}
+.auth-content .form-title{
+
+    text-align: center;
+    margin-top: 10px;
+}
+.auth-content  div{
+
+    margin-top: 10px;
+ 
+}
+
+.auth-content .btn{
+  align-self: center;
+    margin: 10px 20px;
+    margin-bottom: 0px;
+    background-color: inherit;
+    color:black;
+    border: 1px solid gray;
+    transition: all 0.5s;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: 'lora',serif;
+   
+   
+}
+.auth-content p
+{
+    text-align: center;
+    margin-top: -10px;
+    color:black;
+    margin: 10px;
+}
+.auth-content p a{
+
+    text-decoration: underline;
+}
+.auth-content .btn:hover{
+
+    background-color: crimson;
+    color:white;
+}
+.auth-content label{
+    font-size: 15px;
+    font-family: 'Lora',serif;
+
+    margin-left: 20px;
+}
+
+.auth-content .text-input{
+
+    width:90%;
+    margin: 0px auto;
+}
+@media only screen and (max-width:750px)
+{
+.auth-content{
+
+ width:90%;
+}
+}
+/* Here is End of Authentication Center  */
+
+.fotter .fotter-content{
+    background-color: rgba(0, 0, 0, 0.815);
+    width:100%;
+    height: 300px;
+    display: flex;
+}
+.fotter .fotter-content .fotter-section{
+   
+    flex:1;
+ 
+}
+.fotter .fotter-content  .logo-text h1{
+    padding: 0px;
+}
+
+.fotter .fotter-content  .logo-text .spanic{
+
+    color:gray;
+}
+.fotter .fotter-content .fotter-section .span2{
+   
+    color:white;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+}
+.fotter .fotter-content .fotter-section .social{
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.fotter .fotter-content .fotter-section a{
+
+    color:white;
+    padding: 15px;
+    font-size: 30px;
+}
+.fotter .fotter-content h1,p{
+
+    color:white;
+    padding: 0px 20px 0px 20px;
+    font-size: 20px;
+}
+.fotter .fotter-content .links ul
+{
+    list-style: none;
+}
+.fotter .fotter-content .links ul li:hover{
+    margin-left:5px;
+    transition: 0.5sec;
+    
+    
+    }
+.fotter .fotter-content .links ul a{
+    padding-top: 0;
+   margin-top: 0;
+    text-decoration: none;
+    color:white;
+    font-size: 20px;
+}
+.fotter .fotter-content .contact-input{
+   width:80%;
+   margin: 5px 20px;
+    margin-bottom: 10px;
+    background-color: #444;
+    border:2px  hotpink;
+
+}
+.fotter .fotter-bottom{
+
+    background-color:rgba(51, 37, 37, 0.719) ;
+    color:white;
+    text-align: center;
+    color:black;
+    
+    bottom:0px;
+    position: absolute;
+    font-size: 15px;
+    width:100%;
+  height: 50px;
+ 
+    font-family: 'lora',serif;
+}
+
+@media only screen and (max-width:750px)
+{
+    header{
+
+        position: relative;
+        overflow: hidden;
+    }
+    .showing{
+    overflow: visible;    
+      }
+    header ul{
+
+        width:100%;
+        background-color: cornflowerblue;
+    }
+    header ul li{
+
+        width:100%;
+    }
+    header ul li ul{
+
+        position:static;
+        display: block;
+        width:100%;
+    }
+    header ul li ul li a{
+        background-color: cornflowerblue;
+        padding:10px;
+        margin-left: 30px;
+    }
+    header .toggler-icon{
+   position: absolute;
+        display:block;
+        font-size: 30px;
+        right: 10px;
+        top:15px
+    }
+  
+    header .logo{
+
+        margin-left: 5px;
+    }
+   .fotter{
+    height: 950px;
+   }
+    .fotter .fotter-content{
+        text-align: center;
+        display: block;
+        height: 900px;
+        border: 2px solid blue;;
+        
+    }
+    .fotter .fotter-content .contact-input{
+ 
+        width:70%;
+        margin: 0px auto;
+        padding: 20px;
+       
+        margin-bottom: 10px;
+    }
+
+    .fotter .fotter-content .fotter-section{
+  width:100%;
+    }
+}
